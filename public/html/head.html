@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Header et Footer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="../../src/assets/css/head.css">
+  <script></script>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <div class="col-auto">
+          <img id="image-logo" src="../images/logoeray.jpg" alt="Logo" style="height: 70px;"> 
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ico ri-home-4-fill"></i> Actualité</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ico ri-bar-chart-box-fill"></i> Cours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ico ri-calendar-2-line"></i> Emploi du temps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ico ri-article-fill"></i> Notes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="ico bx bx-note"></i> Absence</a>
+            </li> 
+          </ul>
+        <div class="col-sm-1">
+          <a href="#" class="addEtudiantlink" id="openFormBtn">
+            <div class="addEtudiant">
+              <span class="text-etudiant">Ajouter étudiant</span>
+              <i class="ri-user-add-fill"></i>
+            </div>
+          </a>
+          
+        </div>
+          <button class="logout btn">Déconnexion <i class="lgico ri-logout-circle-r-line"></i></button> 
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  <!--Pop-up étudiant-->
+  <div id="popupForm" class="form-popup">
+    <div class="form-container">
+        <h2>Formulaire d'inscription</h2>
+        <form>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="filiere">Filière:</label>
+                    <input type="text" id="filiere" name="filiere" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="annee">Année Académique:</label>
+            <select id="annee" name="annee" required>
+                <option value="">Sélectionner une année</option>
+                <option value="2023-2024">L1</option>
+                <option value="2024-2025">L2</option>
+                <option value="2025-2026">L3</option>
+                <option value="2025-2026">M1</option>
+                <option value="2025-2026">M2</option>
+            </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+    
+                </div>
+                <div class="col-sm-6">
+                    <label for="annee">Type:</label>
+            <select id="annee" name="annee" required>
+                <option value="">Etudiant ou prof</option>
+                <option value="2023-2024">Professeur</option>
+                <option value="2024-2025">Etudiant</option>
+            </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="submit" id="envoyer" class="cancel-btn">Envoyer</button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="button" id="closeFormBtn" class="cancel-btn">Fermer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+       
+
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p>
+<p>Lorem Ipsum</p><br><br><br><br><br>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-white text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="text-uppercase">Partenaires</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit inventore quo magnam quas ipsam sit architecto aperiam dicta, quam aspernatur, quidem beatae repellat nisi natus, rem fuga neque labore rerum?
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!" class="text-dark">Link 1</a></li>
+            <li><a href="#!" class="text-dark">Link 2</a></li>
+            <li><a href="#!" class="text-dark">Link 3</a></li>
+            <li><a href="#!" class="text-dark">Link 4</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!" class="text-dark">Link 5</a></li>
+            <li><a href="#!" class="text-dark">Link 6</a></li>
+            <li><a href="#!" class="text-dark">Link 7</a></li>
+            <li><a href="#!" class="text-dark">Link 8</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-3">
+      © 2024 Eray Link <div class="col-auto">
+        <img id="image-logo" src="img/logoeray.jpg" alt="Logo" style="height: 70px;"> 
+    </div> <div class="col-auto">
+        
+    </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../src/assets/js/head.js"></script>
+</body>
+</html>

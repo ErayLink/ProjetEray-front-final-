@@ -1,0 +1,12 @@
+.file{
+    color: green;
+    padding: 50px;
+}
+.list-group-item a:hover{
+    background-color: green;
+    border-radius: 10px;
+
+}.container-fluid pb-3{
+    display: flex;
+    flex-wrap: wrap;
+}

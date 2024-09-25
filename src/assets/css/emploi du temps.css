@@ -1,0 +1,97 @@
+
+
+
+#col-md-6_filiere {
+  display: unset;
+}
+
+
+
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+  outline: 0;
+}
+
+
+.nav.nav-pills {
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #a9d3d7e6;
+}
+
+
+
+#image-logo {
+  width: auto;
+}
+
+#card-none {
+  display: none;
+}
+
+#test {
+  background: #ab993a3b;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  background-color: rgba(171, 153, 58, 0.23);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: none;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+
+#container-mt4_div {
+  background: #67309d26;
+  width: auto;
+  text-align: center;
+  margin: 40px;
+  visibility: unset;
+  display: grid;
+  border-radius: 11px;
+}
+
+#row2-id {
+
+
+
+
+}
+
+
+#creat {
+  background: #41556740;
+
+  width: auto;
+  display: none;
+  margin: auto;
+  border-radius: 8px;
+}
+
+
+
+.list-group-item {
+  text-align: center;
+}
+
+
+#inputfile {
+  display: none;
+}

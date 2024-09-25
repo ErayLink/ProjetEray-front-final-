@@ -1,0 +1,61 @@
+#container-fluid-div_first {
+  display: inherit;
+}
+
+
+#L1 {
+width: -moz-available;
+}
+
+
+#card_div {
+ 
+}
+
+.btn-outline-secondary {
+  
+  width: -moz-available;
+  
+}
+
+.list-group-item  {
+  border:0px solid 
+}
+
+html {
+  /*! background: #6b9bc573; */
+}
+
+body {
+  /*! background: #d2a97140; */
+}
+
+
+.nav.nav-pills {
+  background: #d5e9ec4a;
+}
+
+
+#tertiary_id {
+  /*! background: #5f9ea00a; */
+}
+
+#send {
+  background: #0064ff;
+}
+
+
+
+
+.nav-link {
+  border-top-style: hidden;
+  border-right-color: ghostwhite;
+  border-left-color: cornsilk;
+  border-bottom-color: darkturquoise;
+}
+
+#img_cours {
+
+  border-radius: 73px;
+  margin-top: 0%;
+}

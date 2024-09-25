@@ -1,0 +1,221 @@
+.edit{
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px #7E7E7E;
+  width:55%;
+  height:175%;
+  margin-top:10px;
+  margin-left:26%;
+  border-radius: 25px;
+  padding-top: 7%;
+  padding-bottom: -20%;
+}
+
+.save{
+  float: right;
+  margin-top: -12%;
+  margin-right: 5%;
+  font-size: 150%;
+}
+.savea{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #038dcd;
+  text-decoration: none;
+}
+.savea:hover{
+  color: #36baf8;
+}
+.textarea{
+  width: 90%;
+  height: 65%;
+  margin-left: 4.5%;
+  margin-top: -6%;
+  border: 2px solid #b1b1b1;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.textarea::placeholder{
+  padding-left: 1%;
+  font-size: 25px;
+}
+
+.fonction{
+  width: 90%;
+  height: 6%;
+  margin-left: 5%;
+  display: inline-block;
+  padding-top: 1%;
+  margin-top: 2%;
+}
+.imgvd{
+  display: inline-block;
+}
+.imgri{
+  display: inline-block;
+  font-size: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7E7E7E;
+}
+.imgico{
+ font-size: 20px; 
+}
+input[type=file]{
+display: none;
+margin-top: 10%;
+}
+.choix{
+padding: 8px 12px;
+background-color: #FFFFFF;
+border-radius: 10px;
+box-shadow: 2px 2px 7px #7E7E7E;
+color: #7E7E7E;
+cursor: pointer;
+}
+
+.choix:hover {
+background: #019EE5;
+color: #FFFFFF;
+}
+.supp{
+  font-size: 120%;
+  display: inline-block;
+  margin-left: 57%;
+  color: #7E7E7E;
+}
+.annuler{
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 2px 2px 7px #7E7E7E;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top:20px;
+  padding-bottom:20px;
+  font-family: arial;
+  color: #7E7E7E;
+  font-size: 15px;
+  margin-left: 37%;
+}
+.annuler:hover{
+      background-color: #019EE5;
+      color: #FFFFFF;
+}
+.btndiv{
+  margin-top:8%;
+}
+
+@media (max-width:1400px) and (min-width:1050px){
+  .edit{
+    width: 55%;
+    height: 220%;
+    justify-content: center;
+  }
+  .savea{
+    font-size: 20px;
+  }
+  .textarea{
+    width: 90%;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  .textarea::placeholder{
+    font-size: 15px;
+  }
+  .tof{
+    display: none;
+  }
+  .supp{
+    margin-left: 75%;
+  }
+  .annuler{
+    justify-content: center;
+    margin-left: 35%;
+  }
+}
+@media (max-width: 1050px) and (min-width: 768px) {
+  .edit{
+    width: 55%;
+    height: 200%;
+    justify-content: center;
+  }
+  .savea{
+    font-size: 20px;
+    justify-content: right;
+  }
+  .textarea{
+    width: 90%;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  .textarea::placeholder{
+    font-size: 15px;
+  }
+  .tof{
+    display: none;
+  }
+  .supp{
+    margin-left: 65%;
+  }
+  .annuler{
+    justify-content: center;
+    margin-left: 36%;
+    padding: 5%;
+  }
+}
+@media (max-width: 768px) and (min-width: 375px) {
+  .edit{
+    width: 55%;
+    height: 200%;
+    justify-content: center;
+  }
+  .savea{
+    justify-content: right;
+    font-size: 15px;
+    margin-top: 1%;
+  }
+  .textarea{
+    width: 90%;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  .textarea::placeholder{
+    font-size: 15px;
+  }
+  .tof{
+    display: none;
+  }
+  .annuler{
+    justify-content: center;
+    margin-left: 35%;
+    padding: 4%;
+  }
+  
+}
+@media (max-width:575px) and (min-width:375px){
+  .edit{
+    width: 55%;
+    justify-content: center;
+  }
+  .savea{
+    font-size: 12px;
+    margin-top: 5%;
+    justify-content: right;
+  }
+  .textarea{
+    width: 90%;
+    justify-content: center;
+    margin-top: 1%;
+  }
+  .textarea::placeholder{
+    font-size: 15px;
+  }
+  .tof{
+    display: none;
+  }
+  .annuler{
+    justify-content: center;
+    margin-left: 35%;
+  }
+}

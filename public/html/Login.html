@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <style>
+        body {
+    background-color: #dfe5e6;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 8;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30%;
+    width: 30%;
+    margin-bottom: -350px;
+    margin-left: 10%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 0 2px 10px grey;
+    width: 60%;
+    text-align: right;
+}
+
+.title {
+    width: 85%;
+    text-align: right;
+}
+
+.az {
+    width: 80%;
+    text-align: right;
+}
+
+.b {
+    margin-left: 10%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    padding-left: 120px;
+    padding-right: 50px;
+}
+
+.input-group input {
+    width: 50%;
+    padding: 2%;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px #7E7E7E;
+    background-color: white;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.checkbox {
+    margin-bottom: 5%;
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 3px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    text-align: right;
+    margin-right: 27%;
+}
+
+.button {
+    background-color: #019EE5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 37%;
+    box-shadow: 0 1px 5px grey;
+    margin-right: 58px;
+}
+
+.button:hover {
+    background-color: #0069d9;
+}
+
+.forgot {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    margin-right: 10%;
+}
+
+.forgot a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .logo img {
+        height: 50px; /* Ajuster la taille de l'image sur les petits écrans */
+        width: 50px;
+        margin-bottom: -100px;
+        margin-left: 0;
+    }
+
+    .input-group {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .input-group input {
+        width: 90%;
+    }
+
+    .button {
+        width: 90%; /* S'adapte à la largeur du container */
+        margin-right: 0;
+    }
+
+    .forgot {
+        margin-right: 60px;
+    }
+
+    h1, h4 {
+        text-align: right; /* Centrer les titres */
+
+    }
+}
+
+/* Autres styles inchangés... */
+
+/* Media Queries */
+
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .logo img {
+        height: 50px; /* Ajuster la taille de l'image sur les petits écrans */
+        width: 50px;
+        margin-bottom: -100px;
+        margin-left: 0;
+    }
+
+    .input-group {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .input-group input {
+        width: 90%;
+    }
+
+    .button {
+        width: 90%; /* S'adapte à la largeur du container */
+        margin-right: 0;
+    }
+
+    .forgot {
+        margin-right: 60px;
+    }
+
+    h1, h4 {
+        text-align: right; /* Garder l'alignement à droite */
+        margin-right: 10%; /* Ajouter une marge à droite pour décaler légèrement */
+    }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 5%;
+    }
+
+    h1 {
+        font-size: 18px; /* Réduire la taille des titres */
+        text-align: right; /* Garder l'alignement à droite */
+        margin-right: 27%; /* Ajouter une marge à droite pour décaler légèrement */
+    }
+    h4 {
+        font-size: 18px; /* Réduire la taille des titres */
+        text-align: right; /* Garder l'alignement à droite */
+        margin-right: 19%; /* Ajouter une marge à droite pour décaler légèrement */
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+        margin-bottom: -50px;
+    }
+
+    .input-group input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="logo"><img src="../images/Eray.jpg" alt="Description de l'image"></div>
+    <div class="title"><h1>Bienvenue</h1>
+</div>
+    <div class="az"><h4>  Se connecter</h4></div>
+
+        
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Entrez votre email">
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Entrez votre mot de passe">
+            <i class="icon fas fa-eye"></i>
+        </div>
+
+        <button class="button">CONNEXION</button>
+
+        <div class="forgot">
+            <a href="#">Oublié nom d'utilisateur / mot de passe?</a>
+        </div>
+    </div>
+</body>
+</html>

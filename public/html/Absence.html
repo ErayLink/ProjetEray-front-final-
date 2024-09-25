@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="../../src/assets/css/absence.css">
+    <link rel="stylesheet" type="text/css" href="../../src/assets/css/bootstrap.css">
+    <script type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <!-- Icons definition here (same as before) -->
+    </svg>
+
+    <main>
+        <div class="container">
+            <header class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Emplois du temps</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cours</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Notes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Absence</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <!-- Responsive Grid Layout -->
+        <div class="container-fluid pb-3">
+            <!-- Using responsive grid classes for different screen sizes -->
+            <div class="row">
+                <!-- Sidebar Column -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="bg-body-tertiary border rounded-3 p-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                Année académique
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#" class="nav-link">L1</a></li>
+                                    <li class="list-group-item"><a href="#" class="nav-link">L2</a></li>
+                                    <li class="list-group-item"><a href="#" class="nav-link">L3</a></li>
+                                    <li class="list-group-item"><a href="#" class="nav-link">M1</a></li>
+                                    <li class="list-group-item"><a href="#" class="nav-link">M2</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Column -->
+                <div class="col-lg-8 col-md-6 mb-3">
+                    <div class="bg-body-tertiary border rounded-3 p-3">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                Deposer la ficher de presence L1
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <input type="file" value="Rejoindre ficher" class="form-control">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
