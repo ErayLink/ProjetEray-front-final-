@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="../../src/assets/css/cours.css"> <!-- Lien vers le fichier CSS -->
+    <script src="../../src/assets/js/cours.js" defer></script> <!-- Lien vers le fichier JavaScript -->
+</head>
+<body>
+    <div class="container">
+        <!-- Formulaire pour créer un cours -->
+        <div id="createFormContainer" class="form-container" style="display: none;">
+            <h3>Créer un Cours</h3>
+            <form id="createCourseForm">
+                <input type="text" placeholder="Nom du cours" required>
+                <input type="text" placeholder="Nom de l'enseignant" required>
+                <input type="number" placeholder="Nombre d'étudiants" required>
+                <button type="submit">Envoyer</button>
+                <button type="button" id="closeCreateFormBtn">Fermer</button>
+            </form>
+        </div>
+
+        <!-- Formulaire pour gérer un cours -->
+        <div id="manageFormContainer" class="form-container" style="display: none;">
+            <h3>Gérer un Cours</h3>
+            <form id="manageCourseForm">
+                <input type="text" placeholder="Nom du cours à gérer" required>
+                <input type="text" placeholder="Matière Et Section" required>
+                <input type="text" placeholder="Nom de l'enseignant" required>
+                <input type="number" placeholder="Nombre d'étudiants" required>
+                <button type="submit">Mettre à jour</button>
+                <button type="button" id="closeManageFormBtn">Fermer</button>
+            </form>
+        </div>
+        
+        <div class="sidebar">
+            <h3><i class="fas fa-graduation-cap"></i> Année Académique</h3>
+            <select id="anneeAcademique">
+                <option value="">Sélectionnez une année</option>
+                <option value="L1">L1 2023-2024</option>
+                <option value="L2">L2 2023-2024</option>
+                <option value="L3">L3 2023-2024</option>
+                <option value="M1">M1 2023-2024</option>
+                <option value="M2">M2 2023-2024</option>
+            </select>
+        </div>
+    
+        <div class="content">
+            <div class="search">
+                <input type="text" placeholder="Recherche de cours">
+            </div>
+            <div>
+                <input type="text" id="nouvelleFiliere" placeholder="Nouvelle filière">
+                <button id="addFiliereBtn">Créer filière</button>
+            </div>
+            <div id="filiereButtons" style="display: flex; flex-wrap: wrap; gap: 10px;"></div> <!-- Flexbox pour les boutons -->
+    
+            <h1 id="titreCours"></h1>
+            <div class="course-container" id="courseContainer" style="display: none;">
+                <div class="course">
+                    <h3>Créer</h3>
+                    <p><i class="fas fa-plus"></i></p>
+                    <button id="createCourseBtn">Créer</button>
+                </div>
+                <div class="course">
+                    <h3>Nom du cours</h3>
+                    <p>Matière Et Section</p>
+                    <p>Nom de l'enseignant et nombre d'étudiants</p>
+                    <button id="manageCourseBtn">Gérer</button>
+                </div>
+                <div class="course">
+                    <h3>Nom du cours</h3>
+                    <p>Matière Et Section</p>
+                    <p>Nom de l'enseignant et nombre d'étudiants</p>
+                    <button id="manageCourseBtn">Gérer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

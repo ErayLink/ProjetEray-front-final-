@@ -1,0 +1,202 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permet à la sidebar de se déplacer sous le contenu sur petits écrans */
+}
+
+.form-container {
+    position: absolute; /* Pour le positionnement en haut de la page */
+    top: 20px; /* Ajustez comme nécessaire */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Pour être au-dessus d'autres éléments */
+}
+
+.form-container form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-container form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container form button:hover {
+    background-color: #0056b3;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px #7e7e7e;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.search {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0069d9;
+}
+
+.filiere-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.filiere-buttons-container button {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filiere-buttons-container button:hover {
+    background-color: #0056b3;
+}
+
+.add-filiere-form {
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: none; /* Hide courses initially */
+    gap: 20px;
+}
+
+.course {
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px #7e7e7e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.course h3 {
+    margin-top: 0;
+}
+
+.course button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.url-generator {
+    margin-top: 20px;
+}
+
+.url-generator p {
+    font-weight: bold;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* La sidebar passe en dessous du contenu sur petits écrans */
+    }
+
+    .sidebar {
+        width: 200px; /* La sidebar prend toute la largeur sur petits écrans */
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .course-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Centrer les cours sur petits écrans */
+    }
+
+    .course {
+        width: 100%; /* Les cours prennent toute la largeur sur petits écrans */
+        margin-bottom: 20px;
+    }
+
+    .search input[type="text"] {
+        padding: 8px;
+    }
+
+    .buttons button, .filiere-buttons-container button {
+        padding: 8px 16px;
+    }
+}
+
+/* Styles pour les très petits écrans */
+@media (max-width: 800px) {
+    .course {
+        width: 100%; /* Les cours s'ajustent à la largeur de l'écran */
+    }
+
+    .buttons button, .filiere-buttons-container button {
+        width: 100%; /* Les boutons s'ajustent à la largeur de l'écran */
+        margin-right: 0;
+        margin-bottom: 10px; /* Ajouter de l'espace entre les boutons en mode stack */
+    }
+
+    .search input[type="text"] {
+        width: 100%;
+    }
+}
